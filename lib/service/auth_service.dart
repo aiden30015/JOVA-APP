@@ -6,9 +6,9 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthService {
-  static final String _authUrl = "https://daram-gsm.kro.kr/gauth/authorization";
+  static final String _authUrl = "https://port-0-jova-backend-m0kvtwm45b2f2eb2.sel4.cloudtype.app/gsm";
   static final String _tokenUrl = "https://daram-gsm.kro.kr/api/login/gauth/code";
-  static final String _redirectUrl = "https://port-0-jova-backend-m0kvtwm45b2f2eb2.sel4.cloudtype.app/";
+  static final String _redirectUrl = "https://port-0-jova-backend-m0kvtwm45b2f2eb2.sel4.cloudtype.app/gsm";
 
   static Future<Map<String, String>> signInWithOAuth(BuildContext context) async {
     String code = await _getAuthorizationCode(context);
