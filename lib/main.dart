@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:jovajovajova/screens/main_screen/main_screen.dart';
+import 'package:jovajovajova/screens/main_screen.dart';
 
 void main(){
   runApp(MainScreen());
